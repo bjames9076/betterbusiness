@@ -10,13 +10,6 @@ module.exports = {
     path: path.join(__dirname, '/client/dist/js'),
     filename: 'app.js',
   },
-  "externals": {
-    "electron": "require('electron')",
-    "child_process": "require('child_process')",
-    "fs": "require('fs')",
-    "path": "require('path')"
-   
- },
 
   module: {
 
@@ -24,6 +17,9 @@ module.exports = {
     loaders: [{
       test: /\.jsx?$/,
       include: path.join(__dirname, '/client/src'),
+    // use: [
+    //     'babel-loader'
+    // ],      
       loader: 'babel-loader',
       query: {
         presets: ["react", "es2015"]
