@@ -1,9 +1,16 @@
-const express = require('express');
+import express from 'express';
+import bodyParser from 'body-parser';
 
 const app = express();
 // tell the app to look for static files in these directories
 app.use(express.static('./server/static/'));
 app.use(express.static('./client/dist/'));
+// tell the app to parse HTTP body messages
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// routes
+import authRoutes from './server/routes/auth';
+app.use('/auth', authRoutes);
 
 // start the server
 app.listen(3000, () => {

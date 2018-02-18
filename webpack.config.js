@@ -10,6 +10,13 @@ module.exports = {
     path: path.join(__dirname, '/client/dist/js'),
     filename: 'app.js',
   },
+  "externals": {
+    "electron": "require('electron')",
+    "child_process": "require('child_process')",
+    "fs": "require('fs')",
+    "path": "require('path')"
+   
+ },
 
   module: {
 
