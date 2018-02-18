@@ -1,7 +1,7 @@
 {
   "name": "reactnodeuserauth",
   "version": "1.0.0",
-  "description": "",
+  "description": "ReactJS + Nodejs + React Router V4 user authentication, based on the code from tutorial: https://vladimirponomarev.com/blog/authentication-in-react-apps-jwt, and the  routing/redirect idea comes from: https://reacttraining.com/react-router/web/example/auth-workflow",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -35,5 +35,13 @@
     "babel-preset-react": "^6.24.1",
     "nodemon": "^1.12.1",
     "webpack": "^3.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjames9076/betterbusiness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bjames9076/betterbusiness/issues"
+  },
+  "homepage": "https://github.com/bjames9076/betterbusiness#readme"
 }
